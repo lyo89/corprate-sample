@@ -1,0 +1,365 @@
+@charset "utf-8";
+
+
+body{
+  margin: 0;
+  font-size: 16px;
+  font-family: Verdana,Arial,Helvetica,'meirio','メイリオ','Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4''ＭＳ Ｐゴシック',sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header{
+  border-top: solid 5px #0000ff;
+}
+
+h1{
+  margin-top: 0;
+  padding-top: 10px;
+  font-size: 50px;
+}
+
+header h1 a{
+  text-decoration: none;
+  color: black;
+}
+
+.tel{
+  float: right;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.container{
+  /*background-color: pink;*/
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img{
+  width: 1000px;
+  height: 400px;
+  padding-top: 50px;
+}
+
+
+.navi ul{
+  padding: 0;
+  font-size: 0;
+  position: relative;
+  top: 60px;
+  bottom: 50px;
+  list-style: none;
+}
+
+.navi li{
+  background-color: #0000ff;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  font-size: 25px;
+  border: solid 1px;
+  width: 180px;
+}
+
+.navi li:hover{
+  opacity: 0.7;
+}
+
+.navi li a{
+  text-decoration: none;
+  color: #fff
+}
+.inner{
+  border: solid 1px;
+  width: 600px;
+  margin-top: 30px;
+}
+.overview{
+  border: solid 1px;
+  width: 600px; 
+  margin-top: 5px;
+}
+#service{
+  margin-top: 30px;
+}
+
+.service1{
+  border: solid 1px;
+  width: 600px;
+}
+.service2{
+  border: solid 1px;
+  width: 600px;
+  margin-top: 30px;
+}
+
+.form{
+  width: 100%;
+  max-width: 500px;
+  border-radius: 6px;
+  margin-left: 30px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 24px;
+  font-size: 15px;
+  background-color: #eaedf2;
+  border: solid 1px #ddd
+}
+
+.textarea{
+  width: 100%;
+  max-width: 500px;
+  border-radius: 6px;
+  margin-left: 30px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 100px;
+  font-size: 15px;
+  background-color: #eaedf2;
+  border: solid 1px #ddd;
+}
+
+.submit-btn{
+  border-radius: 5px;
+  position: relative;
+  left: 250px;
+  bottom: -20px;
+  color: #fff;
+  background-color: #0000ff;
+  cursor: pointer; 
+}
+.submit-btn:hover{
+  opacity: 0.7;
+}
+.contact{
+  height: 410px;
+  border: solid 1px;
+  width: 600px;
+  margin-top: 30px;
+}
+
+p{
+  margin-bottom: 0;
+}
+h2{
+  background-color: #0000ff;
+  color: #fff;
+  padding-left: 10px;
+}
+.news dt{
+  border-bottom: 1px #CCCCCC dotted;
+  padding-left: 10px;
+}
+.news dd{
+  position: relative;
+  top: -40px;
+  left: 100px;
+}
+
+#menu{
+  width: 300px;
+  position: relative;
+  left: 670px;
+  bottom: 350px;
+  border: solid 1px;
+  text-align: center;
+}
+
+#menu01{
+  width: 300px;
+  position: relative;
+  left: 670px;
+  bottom: 220px;
+  border: solid 1px;
+  text-align: center;
+}
+#menu02{
+  width: 300px;
+  position: relative;
+  left: 670px;
+  bottom: 330px;
+  border: solid 1px;
+  text-align: center;
+}
+
+#menu03{
+  width: 300px;
+  position: relative;
+  left: 670px;
+  bottom: 410px;
+  border: solid 1px;
+  text-align: center;
+}
+
+.menulist1 ul{
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.menulist1 li{
+  list-style: none;
+  font-size: 20px;
+  border-top: 1px #CCCCCC dotted;
+  border-bottom: 1px #CCCCCC dotted;  
+}
+
+.menulist2 ul{
+  padding-left: 0;
+}
+
+.menulist2 li{
+  list-style: none;
+  font-size: 20px;
+  border-top: 1px #CCCCCC dotted;
+  border-bottom: 1px #CCCCCC dotted;
+}
+
+.pan a{
+  color: black;
+}
+footer{
+  text-align: center;
+  margin-top: auto;
+}
+footer .footeraddress{
+  padding-bottom: 10px;
+  border-bottom: solid 2px #0000ff;
+}
+
+
+@media (max-width: 700px) {
+
+  body{
+    margin: 10px;
+  }
+
+  .container,footer{
+    width: 100%;
+  }
+
+  header h1{
+    text-align: center;
+  }
+
+  .tel{
+    font-size: 30px;
+  }
+
+  img{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+  }
+
+  .navi li {
+    display: flex;
+  flex-direction: column; 
+
+  }
+
+  .inner {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .inner h2{
+    text-align: center;
+  }
+
+  .news p{
+    width: 100%;
+    position: relative;
+    left: -130px;
+    bottom: -30px;
+  }
+
+  .overview{
+    width: 100%;
+  }
+
+  .overview h2{
+    text-align: center;
+  }
+
+  .service1{
+    width: 100%;
+    text-align: center;
+  }
+
+  .service2{
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact{
+    width: 100%;
+  }
+
+  .contact h2{
+    text-align: center;
+  }
+
+  .form{
+    width: 80%; 
+    box-sizing: border-box;
+  }
+
+  .textarea{
+    width: 80%;
+    box-sizing: border-box;
+  }
+
+  
+  div{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+  
+  .submit-btn{
+    width: 50%;
+    position: relative;
+    left: 25%;
+  }
+  
+  #menu{
+    width: 100%; 
+    position: relative;
+    left: 0;
+    bottom: -30px; 
+  }
+
+  #menu01{
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: -30px;
+  }
+  #menu02{
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: -30px;
+  }
+
+  #menu03{
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: -30px;
+  }
+
+  footer{
+    margin-top: 100px;
+  }
+
+  .pan{
+    margin-top: 70px;
+  }
+
+}
