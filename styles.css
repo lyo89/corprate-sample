@@ -5,19 +5,28 @@ body{
   margin: 0;
   font-size: 16px;
   font-family: Verdana,Arial,Helvetica,'meirio','メイリオ','Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4''ＭＳ Ｐゴシック',sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  
 }
 
 header{
   border-top: solid 5px #0000ff;
 }
 
+.new-menu{
+  visibility: hidden;
+}
+
+.overlay #close{
+  visibility: hidden;
+}
+
+
+
 h1{
   margin-top: 0;
   padding-top: 10px;
   font-size: 50px;
+  text-align: center;
 }
 
 header h1 a{
@@ -41,37 +50,35 @@ header h1 a{
 img{
   width: 1000px;
   height: 400px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 
-.navi ul{
+ .navi ul{
   padding: 0;
-  font-size: 0;
-  position: relative;
-  top: 60px;
-  bottom: 50px;
   list-style: none;
-}
-
-.navi li{
+  display: flex;
   background-color: #0000ff;
-  text-decoration: none;
-  color: #fff;
-  display: inline-block;
+  margin-top: 100px;
+  
+}
+
+.navi  li{
+  width: 100%;
   text-align: center;
-  font-size: 25px;
-  border: solid 1px;
-  width: 180px;
+  border: 1px solid #ffffff;
+
 }
 
-.navi li:hover{
-  opacity: 0.7;
-}
-
-.navi li a{
+.navi ul li a{
+  color: #ffffff;
   text-decoration: none;
-  color: #fff
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.navi ul :hover{
+  opacity: 0.7;
 }
 .inner{
   border: solid 1px;
@@ -233,20 +240,102 @@ footer .footeraddress{
 
 @media (max-width: 700px) {
 
+
+
   body{
+    font-family: Verdana,Arial,Helvetica,'meirio','メイリオ','Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4''ＭＳ Ｐゴシック',sans-serif;
     margin: 10px;
+    
   }
+
 
   .container,footer{
     width: 100%;
   }
 
-  header h1{
-    text-align: center;
+  .new-menu{
+    visibility: visible;
   }
 
-  .tel{
+  .overlay #close{
+    visibility: visible;
+  }
+  
+
+  .new-menu #open{
+    float: right;
     font-size: 30px;
+    cursor: pointer;
+  }
+
+  .new-menu #open.hide{
+    display: none;
+  }
+
+  
+
+
+
+  .overlay{
+    
+    background: rgba(255, 255, 255, 0.95); 
+  
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s;
+  }
+
+  .overlay.show{
+    opacity: 1;
+    pointer-events: auto;
+
+  }
+
+  .overlay #close{
+    font-size: 30px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .overlay ul{
+    display: block;
+    background: none;
+    margin-top: 50px;
+  }
+
+  .overlay ul li a{
+    color: black;
+  }
+
+  .overlay li{
+    border-style: none;
+    margin-top: 10px;
+  }
+
+
+
+
+  header h1{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 40px;
+  }
+
+  
+
+
+
+  .tel{
+    padding-right: 0;
+    text-align: center;
+    font-size: 20px;
+    
   }
 
   img{
@@ -255,11 +344,7 @@ footer .footeraddress{
     margin-top: 15px;
   }
 
-  .navi li {
-    display: flex;
-  flex-direction: column; 
-
-  }
+  
 
   .inner {
     width: 100%;
@@ -363,3 +448,24 @@ footer .footeraddress{
   }
 
 }
+  
+
+
+
+
+
+  
+
+  
+
+
+
+ 
+
+ 
+  
+
+ 
+  
+  
+ 
