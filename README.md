@@ -4,4 +4,4 @@
 <https://lyo89.github.io/corprate-sample/>
 
 # 技術  
-html/css
+html/css/javascript
